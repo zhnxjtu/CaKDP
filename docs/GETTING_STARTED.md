@@ -27,8 +27,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_
 ### Step 3: Distillation (PV-RCNN & SECOND-x0.75 as example, on 4 GPUs)
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --master_port 18891 --nproc_per_node=4 train.py --cfg_file cfgs/kitti_cakdp/second-pv-x0.75.yaml --launcher pytorch --extra_tag pv-second-x0.75
-Please modify the "cif_file" and "extra_tag" to get results for other models.
 ```
+Please modify the "cif_file" and "extra_tag" to get results for other models.
 
 ###  Test without pruning
 Please modify following "cif_file" and "model"
