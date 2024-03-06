@@ -31,7 +31,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --master_port 18
 Please modify the "cif_file" and "extra_tag" to get results for other models.
 
 ###  Test without pruning
-Please modify following "cif_file" and "model"
+Please modify following "cif_file" and "model" first.
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --master_port 18891 --nproc_per_node=4 test.py --cfg_file {#cfg_file} --ckpt {#model} --launcher pytorch
 ```
