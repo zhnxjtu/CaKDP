@@ -9,10 +9,18 @@ prepare needed datasets.
 
 ## Training & Testing
 [//]: # ( TODO)
-### Step 1: Train a teacher model (CP-Pillar as example)
+### Step 1: Train the models (SECOND and PV-RCNN as examples)
 ```shell
-sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file cfgs/waymo_models/cp-pillar/cp-pillar.yaml
+(4 GPUs, SECOND)
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --master_port 18891 --nproc_per_node=4 train.py --cfg_file cfgs/kitti_models/second.yaml --launcher pytorch --extra_tag baseline
+(4 GPUs, PV-RCNN)
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --master_port 18891 --nproc_per_node=4 train.py --cfg_file cfgs/kitti_models/pv_rcnn.yaml --launcher pytorch --extra_tag baseline
 ```
+Here, we provide pretrained models [link](https://drive.google.com/drive/folders/1VTSrXW8MiW_1kbxZEPEMTxq8ZIXUVzuw?usp=sharing). Please put the pretrained model in '/tools/pretrained_model/[#dataset]/[#model name]/[#]'.
+
+
+
+
 
 ### Step 2: Distillation (CP-Pillar-v0.4 as example)
 Modify following keys in the student distillation config
