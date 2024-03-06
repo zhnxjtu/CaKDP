@@ -5,7 +5,7 @@
 [2024/3/6]: Code release for KITTI results.
 
 # Introduction
-Our code is based on OpenPCDet v0.5.2 and SparseKD (https://github.com/CVMI-Lab/SparseKD). More updates on OpenPCDet are supposed to be compatible with our code.
+Our code is based on OpenPCDet v0.5.2 and [SparseKD] (https://github.com/CVMI-Lab/SparseKD). More updates on OpenPCDet are supposed to be compatible with our code.
 
 # Installation
 Please refer to INSTALL.md (https://github.com/zhnxjtu/CaKDP/blob/main/docs/INSTALL.md), SparseKD (https://github.com/CVMI-Lab/SparseKD) and OpenPCDet (https://github.com/open-mmlab/OpenPCDet) for the installation of OpenPCDet.
