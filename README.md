@@ -19,24 +19,27 @@ Our code is heavily based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet
 We also thank all reviewers and AC for their valuable comments.
 
 # Citation
-
+    ```
     @inproceedings{zhang2024cakdp,
         title={CaKDP: Category-aware Knowledge Distillation and Pruning Framework for Lightweight 3D Object Detection},
         author={Zhang, Haonan and Liu, Longjun and Huang, Yuqi and Yang, Zhao and Lei, Xinyu and Wen, Bihan},
         journal={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
         year={2024}
     }
-
+    ```
+    ```
     @inproceedings{yang2022towards,
         title={Towards Efficient 3D Object Detection with Knowledge Distillation},
         author={Yang, Jihan and Shi, Shaoshuai and Ding, Runyu and Wang, Zhe and Qi, Xiaojuan},
         booktitle={Advances in Neural Information Processing Systems},
         year={2022}
     }
-    
+    ```
+    ```   
     @misc{openpcdet2020,
         title={OpenPCDet: An Open-source Toolbox for 3D Object Detection from Point Clouds},
         author={OpenPCDet Development Team},
         howpublished = {\url{https://github.com/open-mmlab/OpenPCDet}},
         year={2020}
     }
+    ```
